@@ -2,6 +2,5 @@
 
 require 'standalone_migrations'
 require './models/person'
-require './models/user'
 
 ActiveRecord::Base.establish_connection YAML.load_file('db/config.yml')[ENV["RAILS_ENV"] || ENV["RACK_ENV"] || "development"]
